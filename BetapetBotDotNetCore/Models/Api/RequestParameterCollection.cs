@@ -24,6 +24,16 @@ namespace BetapetBotDotNetCore.Models.Api
             parameters.Add(parameter);
         }
 
+        public void AddParameter(string key, string value)
+        {
+            parameters.Add(new RequestParameter(key, value));
+        }
+
+        public void AddParameter(string key, object value)
+        {
+            parameters.Add(new RequestParameter(key, value.ToString()));
+        }
+
         public override string ToString()
         {
             StringBuilder result = new StringBuilder("?");

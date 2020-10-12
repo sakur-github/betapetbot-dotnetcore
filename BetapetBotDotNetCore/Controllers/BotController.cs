@@ -12,12 +12,12 @@ namespace BetapetBotDotNetCore.Controllers
     public class BotController : ControllerBase
     {
         [HttpGet()]
-        public async Task<ActionResult<GameResponse>> GetGameResponse()
+        public async Task<ActionResult<GameAndUserListResponse>> GetGameResponse()
         {
             ApiManager manager = new ApiManager();
             LoginResponse apiResponse = await manager.Login("davidrdrgz", "gunnaral");
 
-            return new GameResponse(apiResponse);
+            return await manager.GetGameAndUserList();
         }
     }
 }

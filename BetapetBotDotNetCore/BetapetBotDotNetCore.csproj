@@ -10,6 +10,8 @@
     <Folder Include="Managers\" />
     <Folder Include="Models\Api\" />
     <Folder Include="Models\Api\Responses\" />
+    <Folder Include="Models\Api\Responses\Subclasses\" />
+    <Folder Include="Models\Serialization\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />

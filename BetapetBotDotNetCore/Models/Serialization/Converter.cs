@@ -3,7 +3,7 @@ using System.Globalization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace BetapetBotDotNetCore.Models
+namespace BetapetBotDotNetCore.Models.Serialization
 {
     internal static class Converter
     {

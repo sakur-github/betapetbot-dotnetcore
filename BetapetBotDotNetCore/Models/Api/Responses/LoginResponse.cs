@@ -1,4 +1,5 @@
 ﻿using System;
+using BetapetBotDotNetCore.Models.Serialization;
 using Newtonsoft.Json;
 
 namespace BetapetBotDotNetCore.Models.Api.Responses
